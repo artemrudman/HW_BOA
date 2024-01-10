@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "boa-home-task-AR"
+client_id = "c06cb947eeb6f9b1d0e10069bd85d937"
+application_url = "https://oem-horizontal-control-textiles.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://oem-horizontal-control-textiles.trycloudflare.com/auth/callback",
+  "https://oem-horizontal-control-textiles.trycloudflare.com/auth/shopify/callback",
+  "https://oem-horizontal-control-textiles.trycloudflare.com/api/auth/callback",
+  "https://oem-horizontal-control-textiles.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "home-assignment-17.myshopify.com"

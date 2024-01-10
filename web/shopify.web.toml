@@ -2,3 +2,15 @@ type="backend"
 
 [commands]
 dev = "npm run dev"
+
+
+[extensions.capabilities]
+# Gives your extension access to directly query Shopify’s storefront API.
+# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#api-access
+api_access = true
+
+# ...
+
+network_access = true
+
+# ...
