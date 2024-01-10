@@ -30,7 +30,7 @@ Change following parameters according to your in the .env file.
 
 ======================ACCORDING TASK======================
 
-I couldn,t understand how to use logic without autorization, I create a isLoggedIn const 
+I couldn,t understand how to use logic without autorization, I created a isLoggedIn const 
 for more convinient handling. Automaticly it is defined as a true.
 
 In folder web, into index.js file was implemented logic second express app (MySQLapp)
@@ -46,7 +46,7 @@ I tried to decided it absolutely different ways, but it is there.
 
 It didn't stop me and i just implement all logic and proove it in console. 
 That all my data and info is requires and right. 
-I create postman_collestion and check body data for input in DB - it works absolutely correct.
+I created postman_collestion and check body data for input in DB - it works absolutely correct.
 
 Second problem - i didn't understand how to connect liquid file and style with my Banner.
 My temporary desicion - to make a template according to your task and to know from you how it work in the future :)
