@@ -45,27 +45,25 @@ app.use('/*', shopify.ensureInstalledOnShop(), async (_req, res) => {
 
 app.listen(PORT);
 
-// App on another port for updating info in mysql
+// App on another port for connect and updating info in mysql
 const MySQLapp = express();
 
 MySQLapp.use(express.json());
 
 const db = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password: 'LVqet5Om',
-	database: 'boa',
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
 	if (err) {
 		console.error('Error connecting to MySQL:', err);
 	} else {
-		console.log(`Connected to MySQL on port ${process.env.MYSQL_PORT}`);
+		console.log(`Connected to MySQL on port ${process.env.MYSQL_APP_PORT}`);
 	}
 }); 
- 
-// import {aaa} from '../extensions/checkout-ui/src/Checkout';
 
 MySQLapp.post('/addSavedCartJson', (req, res) => {
 		const { user_id, save_cart_data_json } = req.body;
@@ -84,4 +82,4 @@ MySQLapp.post('/addSavedCartJson', (req, res) => {
 		return result
 	  });
 
-MySQLapp.listen(process.env.MYSQL_PORT)  
+MySQLapp.listen(process.env.MYSQL_APP_PORT)  

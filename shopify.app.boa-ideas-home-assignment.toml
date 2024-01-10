@@ -2,7 +2,7 @@
 
 name = "boa-ideas-home-assignment"
 client_id = "7fd4084cee7e5030098702b3f13304c1"
-application_url = "https://sporting-powerseller-florence-katrina.trycloudflare.com"
+application_url = "https://seattle-eligible-bids-ctrl.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "read_customers"
 
 [auth]
 redirect_urls = [
-  "https://sporting-powerseller-florence-katrina.trycloudflare.com/auth/callback",
-  "https://sporting-powerseller-florence-katrina.trycloudflare.com/auth/shopify/callback",
-  "https://sporting-powerseller-florence-katrina.trycloudflare.com/api/auth/callback",
-  "https://sporting-powerseller-florence-katrina.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://seattle-eligible-bids-ctrl.trycloudflare.com/auth/callback",
+  "https://seattle-eligible-bids-ctrl.trycloudflare.com/auth/shopify/callback",
+  "https://seattle-eligible-bids-ctrl.trycloudflare.com/api/auth/callback",
+  "https://seattle-eligible-bids-ctrl.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]

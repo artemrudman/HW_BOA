@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "ffa82e26-8ec6-4afb-921c-b7910f5a80b0",
+		"name": "BOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addSavedCartJson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"user_id\": \"a7e948e5ee197c0cd4db7910f4e67275\",\r\n            \"save_cart_data_json\": {\r\n    \"0\": {\r\n        \"id\": \"gid://shopify/CartLine/6ac50f80173d9f2eb05f72199ad9e6e2\",\r\n        \"quantity\": 1,\r\n        \"cost\": {\r\n            \"totalAmount\": {\r\n                \"amount\": 885.95,\r\n                \"currencyCode\": \"ILS\"\r\n            }\r\n        },\r\n        \"merchandise\": {\r\n            \"type\": \"variant\",\r\n            \"id\": \"gid://shopify/ProductVariant/42752628195512\",\r\n            \"title\": \"The Videographer Snowboard\",\r\n            \"image\": {\r\n                \"url\": \"https://cdn.shopify.com/s/files/1/0643/1034/5912/files/Main_256x256.jpg?v=1704702378\",\r\n                \"altText\": \"The top and bottom view of a snowboard. The top has view is turquoise and black with graphics of\\n        trees. The bottom view is turquoise with the word hydrogen written in cursive.\"\r\n            },\r\n            \"selectedOptions\": [\r\n                {\r\n                    \"name\": \"Title\",\r\n                    \"value\": \"Default Title\"\r\n                }\r\n            ],\r\n            \"product\": {\r\n                \"id\": \"gid://shopify/Product/7408362684600\",\r\n                \"vendor\": \"Home Assignment 17\",\r\n                \"productType\": \"\"\r\n            },\r\n            \"requiresShipping\": true\r\n        },\r\n        \"attributes\": [],\r\n        \"discountAllocations\": [],\r\n        \"lineComponents\": [],\r\n        \"isCheckbox\": true\r\n    },\r\n    \"1\": {\r\n        \"id\": \"gid://shopify/CartLine/535d1813a4618dd884aec081c250732f\",\r\n        \"quantity\": 1,\r\n        \"cost\": {\r\n            \"totalAmount\": {\r\n                \"amount\": 699.95,\r\n                \"currencyCode\": \"ILS\"\r\n            }\r\n        },\r\n        \"merchandise\": {\r\n            \"type\": \"variant\",\r\n            \"id\": \"gid://shopify/ProductVariant/42752628261048\",\r\n            \"title\": \"The Complete Snowboard\",\r\n            \"subtitle\": \"Ice\",\r\n            \"image\": {\r\n                \"url\": \"https://cdn.shopify.com/s/files/1/0643/1034/5912/products/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d_256x256.jpg?v=1704702378\",\r\n                \"altText\": \"Top and bottom view of a snowboard. The top view shows abstract circles and lines in shades of teal.\\n          The bottom view shows abstract circles and lines in shades of purple and blue with the text “SHOPIFY” in a\\n          sans serif typeface on top.\"\r\n            },\r\n            \"selectedOptions\": [\r\n                {\r\n                    \"name\": \"Color\",\r\n                    \"value\": \"Ice\"\r\n                }\r\n            ],\r\n            \"product\": {\r\n                \"id\": \"gid://shopify/Product/7408362750136\",\r\n                \"vendor\": \"Snowboard Vendor\",\r\n                \"productType\": \"snowboard\"\r\n            },\r\n            \"requiresShipping\": true\r\n        },\r\n        \"attributes\": [],\r\n        \"discountAllocations\": [],\r\n        \"lineComponents\": [],\r\n        \"isCheckbox\": false\r\n    }\r\n}\r\n        }\r\n\r\n        ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addSavedCartJson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addSavedCartJson"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

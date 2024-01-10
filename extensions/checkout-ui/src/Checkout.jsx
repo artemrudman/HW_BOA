@@ -5,14 +5,13 @@ import {
 	reactExtension,
 	Button,
 	Link,
-	// useApplyAttributeChange,
 } from '@shopify/ui-extensions-react/checkout';
 
 export default reactExtension('purchase.checkout.block.render', () => <Extension />);
 
 function Extension() {
 	const { lines, shop, checkoutToken } = useApi();
-	const isLoggedIn = true; // change this variable 
+	const isLoggedIn = true; // change this variable
 	const cardInfoWithFlag = lines.current.map((el) => (el = { ...el, isCheckbox: false }));
 	const blockTitle = isLoggedIn
 		? 'Save your choise into EXTERNAL BAG for future shopping'
@@ -40,7 +39,7 @@ function Extension() {
 	};
 
 	return (
-		<Banner tone="info" title={blockTitle}> 
+		<Banner tone="info" title={blockTitle}>
 			{Array.isArray(cardInfoWithFlag) && isLoggedIn ? (
 				<>
 					{cardInfoWithFlag.map((item) => (
@@ -78,14 +77,3 @@ function Extension() {
 		</Banner>
 	);
 }
-
-// const applyAttributeChange = useApplyAttributeChange();
-
-// async function onCheckboxChange(isChecked) {
-// 	const result = await applyAttributeChange({
-// 		key: 'requestedFreeGift',
-// 		type: 'updateAttribute',
-// 		value: isChecked ? 'yes' : 'no',
-// 	});
-// 	console.log('applyAttributeChange result', result);
-// }
